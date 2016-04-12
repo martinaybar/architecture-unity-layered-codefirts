@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using architecture_unity_layered_codefirts;
-using architecture_unity_layered_codefirts.Controllers;
 
 namespace architecture_unity_layered_codefirts.Tests.Controllers
 {
