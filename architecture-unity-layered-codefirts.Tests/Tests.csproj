@@ -91,12 +91,6 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\architecture-unity-layered-codefirts\architecture-unity-layered-codefirts.csproj">
-      <Project>{8BA1ECBF-70F9-4F73-AC97-E00B69DF842B}</Project>
-      <Name>architecture-unity-layered-codefirts</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
