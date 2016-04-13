@@ -24,6 +24,7 @@ namespace Data.Entities
 
 
         #region Constructor
+
         public User(string firstName, string lastName, int userTypeId)
         {
             this.FirstName = firstName;
@@ -31,6 +32,10 @@ namespace Data.Entities
             this.UserTypeId = userTypeId;
         }
 
+        public User()
+        {
+
+        }
         #endregion
     }
 }

@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq;
 using Business.Interface;
 using Data.Entities;
-using Business.Repository;
 using Data.Context;
 
 namespace Business.Repository

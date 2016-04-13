@@ -43,7 +43,7 @@ namespace Data.Migrations
 
             //Fill Users table
             var usersList = new List<User>();
-            for(int i=0; i<10; i++)
+            for (int i = 0; i < 10; i++)
             {
                 int userType = (i % 2 == 0) ? 1 : 2;
                 User newUser = new User("Juan " + i, "Alvarez " + i, userType);

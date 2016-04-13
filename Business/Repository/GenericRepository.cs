@@ -3,7 +3,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using Business.Interface;
 using System.Data.Entity;
-
+using Data.Context;
 namespace Business.Repository
 {
     public abstract class GenericRepository<TEntity> :
@@ -11,13 +11,14 @@ namespace Business.Repository
     {
 
         #region Constructor
+
         public GenericRepository(DbContext context)
         {
             this.context = context;
             this.set = context.Set<TEntity>();
         }
-        #endregion
 
+        #endregion
 
         #region Properties
 
@@ -38,9 +39,7 @@ namespace Business.Repository
                 return set;
             }
         }
-
-
-
+        
         #endregion
 
 
