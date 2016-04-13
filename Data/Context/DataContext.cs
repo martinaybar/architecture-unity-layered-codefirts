@@ -9,9 +9,6 @@ namespace Data.Context
         public DataContext()
             : base("DataContextConnection")
         {
-
-            Configuration.ProxyCreationEnabled = false;
-            Configuration.LazyLoadingEnabled = false;
         }
 
         public virtual DbSet<User> Users { get; set; }
