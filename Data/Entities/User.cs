@@ -22,5 +22,15 @@ namespace Data.Entities
         [ForeignKey("UserTypeId")]
         public virtual UserType UserType { get; set; }
 
+
+        #region Constructor
+        public User(string firstName, string lastName, int userTypeId)
+        {
+            this.FirstName = firstName;
+            this.LastName = lastName;
+            this.UserTypeId = userTypeId;
+        }
+
+        #endregion
     }
 }
