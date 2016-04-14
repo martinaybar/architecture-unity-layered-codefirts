@@ -4,6 +4,7 @@ using System.Linq.Expressions;
 using Business.Interface;
 using System.Data.Entity;
 using Data.Context;
+
 namespace Business.Repository
 {
     public abstract class GenericRepository<TEntity> :
@@ -15,6 +16,12 @@ namespace Business.Repository
         public GenericRepository(DbContext context)
         {
             this.context = context;
+            this.set = context.Set<TEntity>();
+        }
+
+        public GenericRepository()
+        {
+            this.context = new DataContext();
             this.set = context.Set<TEntity>();
         }
 

@@ -2,9 +2,17 @@
 <h1>Architecture Project Example</h1>
 <h2>Project with layered architecture, DI, codefirst.</h2>
 
-<p>Entity Framework</p>
-<p>CodeFirst</p>
-<p>N-Layer</p>
-<p>DI - Unity</p>
-<p>Repository Patterns</p>
+<p>Technologies - Patterns</p>
+<ul>
+  <li>Entity Framework</li>
+  <li>CodeFirst</li>
+  <li>Dependence Inyection Pattern(Unity)</li>
+  <li>N-Layer</li>
+  <li>Repository Pattern</li>
+</ul>
 
+<p>Nuget packages</p>
+<ul>
+  <li>Unity</li>
+  <li>Automapper</li>
+</ul>
