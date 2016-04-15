@@ -19,12 +19,14 @@ namespace Web.Controllers
             this._userRepository = userRepository;
         }
 
-
+            
         // GET: Users
         public ActionResult Index()
         {
             IEnumerable<User> users = _userRepository.GetAll();
             return View(users);
+
+   
         }
     }
 }

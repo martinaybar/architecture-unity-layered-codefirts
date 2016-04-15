@@ -19,12 +19,6 @@ namespace Business.Repository
             this.set = context.Set<TEntity>();
         }
 
-        public GenericRepository()
-        {
-            this.context = new DataContext();
-            this.set = context.Set<TEntity>();
-        }
-
         #endregion
 
         #region Properties
