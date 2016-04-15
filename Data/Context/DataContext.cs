@@ -1,5 +1,5 @@
+using Entities;
 using System.Data.Entity;
-using Data.Entities;
 
 namespace Data.Context
 {

@@ -1,11 +1,7 @@
-﻿using System;
+﻿using Business.Interface;
+using Entities;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
-using Business.Interface;
-using Data.Context;
-using Data.Entities;
 
 namespace Web.Controllers
 {
@@ -25,8 +21,20 @@ namespace Web.Controllers
         {
             IEnumerable<User> users = _userRepository.GetAll();
             return View(users);
-
-   
         }
+
+
+        /// <summary>
+        /// Dispose repository.
+        /// </summary>
+        /// <param name="disposing"></param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing)
+                this._userRepository.Dispose();
+
+            base.Dispose(disposing);
+        }
+
     }
 }

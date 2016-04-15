@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Business.Interface
 {
-    public interface IGenericRepository<T> where T : class
+    public interface IGenericRepository<T> :IDisposable where T : class
     {
 
         IQueryable<T> GetAll();

@@ -52,8 +52,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context\DataContext.cs" />
-    <Compile Include="Entities\User.cs" />
-    <Compile Include="Entities\UserType.cs" />
     <Compile Include="Migrations\201604121421145_first migration.cs" />
     <Compile Include="Migrations\201604121421145_first migration.Designer.cs">
       <DependentUpon>201604121421145_first migration.cs</DependentUpon>
@@ -69,6 +67,12 @@
     <EmbeddedResource Include="Migrations\201604121421145_first migration.resx">
       <DependentUpon>201604121421145_first migration.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entities\Entities.csproj">
+      <Project>{67aea52c-a3f5-4c51-b8bf-dc0ad931cb5b}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

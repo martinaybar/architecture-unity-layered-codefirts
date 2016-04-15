@@ -313,9 +313,9 @@
       <Project>{f26135a8-5ec6-4399-b5fe-d14f2519e716}</Project>
       <Name>Business</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Data\Data.csproj">
-      <Project>{10b5cb42-b1b6-4e10-b5c3-c308a9c4f82b}</Project>
-      <Name>Data</Name>
+    <ProjectReference Include="..\Entities\Entities.csproj">
+      <Project>{67aea52c-a3f5-4c51-b8bf-dc0ad931cb5b}</Project>
+      <Name>Entities</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

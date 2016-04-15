@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 using Business.Interface;
-using Data.Entities;
+using Entities;
 using Data.Context;
 
 namespace Business.Repository
