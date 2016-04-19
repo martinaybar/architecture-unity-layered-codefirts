@@ -2,6 +2,8 @@
 using Entities;
 using System.Collections.Generic;
 using System.Web.Mvc;
+using AutoMapper;
+using Web.Models;
 
 namespace Web.Controllers
 {
@@ -21,6 +23,14 @@ namespace Web.Controllers
         {
             IEnumerable<User> users = _userRepository.GetAll();
             return View(users);
+        }
+
+        //GET: Users/id
+        public ActionResult Details(int id)
+        {
+            var user = _userRepository.FindById(id);
+            UserVM userVM = Mapper.Map<User, UserVM>(user);
+            return View();
         }
 
 

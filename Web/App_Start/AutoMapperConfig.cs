@@ -3,12 +3,17 @@ using Entities;
 using Web.Models;
 
 
-namespace Web.App_Start
+namespace Web
 {
     public static class AutoMapperConfig
     {
         public static void RegisterMappings()
         {
+            // Mapper.Initialize
+            Mapper.Initialize(cfg =>
+            {
+                cfg.CreateMap<User, UserVM>();
+            });
         }
     }
 }

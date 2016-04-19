@@ -52,9 +52,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context\DataContext.cs" />
+    <Compile Include="Mapping\UserMapping.cs" />
+    <Compile Include="Mapping\UserTypeMapping.cs" />
     <Compile Include="Migrations\201604121421145_first migration.cs" />
     <Compile Include="Migrations\201604121421145_first migration.Designer.cs">
       <DependentUpon>201604121421145_first migration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604181926404_fluent api implementation.cs" />
+    <Compile Include="Migrations\201604181926404_fluent api implementation.Designer.cs">
+      <DependentUpon>201604181926404_fluent api implementation.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -67,6 +73,9 @@
     <EmbeddedResource Include="Migrations\201604121421145_first migration.resx">
       <DependentUpon>201604121421145_first migration.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604181926404_fluent api implementation.resx">
+      <DependentUpon>201604181926404_fluent api implementation.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Entities\Entities.csproj">
@@ -74,6 +83,7 @@
       <Name>Entities</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

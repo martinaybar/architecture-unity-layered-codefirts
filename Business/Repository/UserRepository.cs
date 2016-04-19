@@ -14,7 +14,7 @@ namespace Business.Repository
 
         public User FindById(int userId)
         {
-            var user = GetAll().FirstOrDefault(x => x.UserId == userId);
+            //var user = GetAll().FirstOrDefault(x => x.UserId == userId);
             var query = Context.Set<User>().FirstOrDefault(x => x.UserId == userId);
             return query;
         }

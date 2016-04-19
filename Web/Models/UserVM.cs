@@ -5,7 +5,7 @@ using System.Web;
 
 namespace Web.Models
 {
-    public class UserModel
+    public class UserVM
     {
         public int UserId { get; set; }
         public string FirstName { get; set; }
@@ -13,6 +13,8 @@ namespace Web.Models
         public string UserName { get; set; }
         public string Password { get; set; }
         public int UserTypeId { get; set; }
-        
+
+        public virtual UserTypeVM UserType { get; set; }
+
     }
 }

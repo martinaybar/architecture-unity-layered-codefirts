@@ -1,14 +1,15 @@
 ﻿using System.Collections.Generic;
 
-namespace Entities
+
+namespace Web.Models
 {
-    public class UserType
+    public class UserTypeVM
     {
         public int UserTypeId { get; set; }
         public string UserTypeName { get; set; }
         public string Description { get; set; }
 
-        public virtual ICollection <User> Users { get; set; }
+        public virtual ICollection<UserVM> Users { get; set; }
 
     }
 }

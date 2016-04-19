@@ -1,3 +1,4 @@
+using Data.Mapping;
 using Entities;
 using System.Data.Entity;
 
@@ -16,6 +17,10 @@ namespace Data.Context
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            modelBuilder.Configurations.Add(new UserMapping());
+            modelBuilder.Configurations.Add(new UserTypeMapping());
+
+            base.OnModelCreating(modelBuilder);
         }
     }
 }
