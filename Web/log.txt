@@ -1,0 +1,5 @@
+2016-04-20 15:27:29,657 [7] INFO  Web.Controllers.HomeController [(null)] - GetAllUsers
+2016-04-20 15:27:29,816 [7] WARN  Web.Controllers.HomeController [(null)] - GetAllUsers
+2016-04-20 15:27:30,497 [7] ERROR Web.Controllers.HomeController [(null)] - GetAllUsers
+2016-04-20 15:27:30,497 [7] FATAL Web.Controllers.HomeController [(null)] - GetAllUsers
+2016-04-20 15:27:30,498 [7] DEBUG Web.Controllers.HomeController [(null)] - GetAllUsers

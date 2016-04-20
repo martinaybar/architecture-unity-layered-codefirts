@@ -1,5 +1,4 @@
-﻿using AutoMapper;
-using Entities;
+﻿using Entities;
 using Web.Models;
 
 
@@ -9,10 +8,12 @@ namespace Web
     {
         public static void RegisterMappings()
         {
-            // Mapper.Initialize
-            Mapper.Initialize(cfg =>
+            AutoMapper.Mapper.Initialize(cfg =>
             {
                 cfg.CreateMap<User, UserVM>();
+                cfg.CreateMap<UserVM, User>();
+                cfg.CreateMap<UserTypeVM, UserType>();
+                cfg.CreateMap<UserType, UserTypeVM>();
             });
         }
     }

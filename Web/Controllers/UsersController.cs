@@ -4,13 +4,16 @@ using System.Collections.Generic;
 using System.Web.Mvc;
 using AutoMapper;
 using Web.Models;
+using log4net;
+
 
 namespace Web.Controllers
 {
-
     public class UsersController : Controller
     {
         private IUserRepository _userRepository;
+        private static readonly ILog log = LogManager.GetLogger(typeof(HomeController));
+
 
         public UsersController(IUserRepository userRepository)
         {
@@ -21,6 +24,8 @@ namespace Web.Controllers
         // GET: Users
         public ActionResult Index()
         {
+            log.Info("GetAllUsers");
+
             IEnumerable<User> users = _userRepository.GetAll();
             return View(users);
         }
@@ -29,8 +34,7 @@ namespace Web.Controllers
         public ActionResult Details(int id)
         {
             var user = _userRepository.FindById(id);
-            UserVM userVM = Mapper.Map<User, UserVM>(user);
-            return View();
+            return View(user);
         }
 
 
