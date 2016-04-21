@@ -27,7 +27,7 @@ namespace Data.Migrations
                 c => new
                     {
                         UserTypeId = c.Int(nullable: false, identity: true),
-                        UserTypename = c.String(),
+                        UserTypeName = c.String(),
                         Description = c.String(),
                     })
                 .PrimaryKey(t => t.UserTypeId);
