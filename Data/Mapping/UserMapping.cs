@@ -32,6 +32,9 @@ namespace Data.Mapping
             this.HasRequired(u => u.UserType)
                 .WithMany(b => b.Users)
                 .HasForeignKey(u => u.UserTypeId);
+
+            //RowVersion
+            this.Property(u => u.RowVersion).IsConcurrencyToken();
         }
 
 
