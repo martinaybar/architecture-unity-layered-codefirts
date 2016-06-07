@@ -1,6 +1,6 @@
 # architecture-unity-layered-codefirts
 <h1>Architecture Project Example</h1>
-<h2>Project with layered architecture, DI, codefirst.</h2>
+<h2>Multilayer project with repositories</h2>
 
 <p>Technologies</p>
 <ul>
