@@ -3,6 +3,11 @@ using Microsoft.Practices.Unity;
 using Microsoft.Practices.Unity.Configuration;
 using Business.Interface;
 using Business.Repository;
+using Web.Controllers;
+using Microsoft.AspNet.Identity;
+using Web.Models;
+using Microsoft.AspNet.Identity.EntityFramework;
+using System.Data.Entity;
 
 namespace Web.App_Start
 {
@@ -40,6 +45,27 @@ namespace Web.App_Start
             // TODO: Register your types here
             // container.RegisterType<IProductRepository, ProductRepository>();
             container.RegisterType<IUserRepository, UserRepository>();
+
+            //container.RegisterType(typeof(UserManager<>), new InjectionConstructor(typeof(IUserStore<>)));
+            //container.RegisterType<IUser>(new InjectionFactory(c => c.Resolve<IUser>()));
+            //container.RegisterType(typeof(IUserStore<>), typeof(UserStore<>));
+            //container.RegisterType<IdentityUser, ApplicationUser>(new ContainerControlledLifetimeManager());
+            //container.RegisterType<DbContext, ApplicationDbContext>(new ContainerControlledLifetimeManager());
+
+            //container.RegisterType<UserManager<ApplicationUser>>(new HierarchicalLifetimeManager());
+            //container.RegisterType<IUserStore<ApplicationUser>, UserStore<ApplicationUser>>(new HierarchicalLifetimeManager());
+            //container.RegisterType<DbContext, ApplicationDbContext>(new HierarchicalLifetimeManager());
+
+            container.RegisterType<DbContext, ApplicationDbContext>(
+    new HierarchicalLifetimeManager());
+            container.RegisterType<UserManager<ApplicationUser>>(
+                new HierarchicalLifetimeManager());
+            container.RegisterType<IUserStore<ApplicationUser>, UserStore<ApplicationUser>>(
+                new HierarchicalLifetimeManager());
+
+            container.RegisterType<AccountController>(
+                new InjectionConstructor());
+
         }
     }
 }

@@ -12,7 +12,7 @@ namespace Web.Controllers
     public class UsersController : Controller
     {
         private IUserRepository _userRepository;
-        private static readonly ILog log = LogManager.GetLogger(typeof(HomeController));
+        private static readonly ILog log = LogManager.GetLogger(typeof(UsersController));
 
 
         public UsersController(IUserRepository userRepository)

@@ -56,29 +56,9 @@
     <Compile Include="Mapping\ProductTypeMapping.cs" />
     <Compile Include="Mapping\UserMapping.cs" />
     <Compile Include="Mapping\UserTypeMapping.cs" />
-    <Compile Include="Migrations\201604121421145_first migration.cs" />
-    <Compile Include="Migrations\201604121421145_first migration.Designer.cs">
-      <DependentUpon>201604121421145_first migration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201604181926404_fluent api implementation.cs" />
-    <Compile Include="Migrations\201604181926404_fluent api implementation.Designer.cs">
-      <DependentUpon>201604181926404_fluent api implementation.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201604211547285_RowVersion for User table.cs" />
-    <Compile Include="Migrations\201604211547285_RowVersion for User table.Designer.cs">
-      <DependentUpon>201604211547285_RowVersion for User table.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201604212328538_add-product.cs" />
-    <Compile Include="Migrations\201604212328538_add-product.Designer.cs">
-      <DependentUpon>201604212328538_add-product.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201604212341407_changes.cs" />
-    <Compile Include="Migrations\201604212341407_changes.Designer.cs">
-      <DependentUpon>201604212341407_changes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201604212344034_changes II.cs" />
-    <Compile Include="Migrations\201604212344034_changes II.Designer.cs">
-      <DependentUpon>201604212344034_changes II.cs</DependentUpon>
+    <Compile Include="Migrations\201606081501173_First-Initial.cs" />
+    <Compile Include="Migrations\201606081501173_First-Initial.Designer.cs">
+      <DependentUpon>201606081501173_First-Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -88,32 +68,16 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201604121421145_first migration.resx">
-      <DependentUpon>201604121421145_first migration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201604181926404_fluent api implementation.resx">
-      <DependentUpon>201604181926404_fluent api implementation.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201604211547285_RowVersion for User table.resx">
-      <DependentUpon>201604211547285_RowVersion for User table.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201604212328538_add-product.resx">
-      <DependentUpon>201604212328538_add-product.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201604212341407_changes.resx">
-      <DependentUpon>201604212341407_changes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201604212344034_changes II.resx">
-      <DependentUpon>201604212344034_changes II.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\Entities\Entities.csproj">
       <Project>{67aea52c-a3f5-4c51-b8bf-dc0ad931cb5b}</Project>
       <Name>Entities</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201606081501173_First-Initial.resx">
+      <DependentUpon>201606081501173_First-Initial.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
